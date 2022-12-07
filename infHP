@@ -1,0 +1,6 @@
+Char = game:GetService("Players").LocalPlayer.Character
+
+Char.Humanoid.HealthChanged:Connect(function()
+    Char.Humanoid.MaxHealth = 1000000
+	Char.Humanoid.Health = 1000000
+end)
